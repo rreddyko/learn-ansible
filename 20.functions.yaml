@@ -16,5 +16,5 @@
       msg: "Topics are {{ topics | split(',') }}"
   - name:
     debug:
-      msg: "Name is {{ names | join}}"
+      msg: "Name is {{ names | join(' ')}}"
     
