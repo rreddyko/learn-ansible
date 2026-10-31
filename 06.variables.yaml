@@ -1,0 +1,17 @@
+- name: demo on task level vars
+  hosts: local
+  connection: local
+  vars:
+    acres: "10 acres"
+  tasks:
+  - name: grandpa property
+    ansible.builtin.debug:
+      msg: " my father got {{ acres }} from my grandpa"
+
+  - name: father proerty
+    vars:
+    acres: "1 acre"
+    ansible.builtin.debug:
+      msg: "i got {{ acres }} from my father"
+
+  
