@@ -1,0 +1,21 @@
+- name: course info
+  hosts: local
+  connection: local
+  vars:
+    courses: "dev with secops"
+    duration: 150
+    live_session: true
+    topics: #list
+    - linux
+    - shell
+    - ansible
+    - terraform
+    more_details: #dictionary/map
+      trainer: ramesh
+      months: 4 
+    exact_duiration: 4.5
+  tasks:
+  - name: print info and tpes
+    debug:
+      msg: |
+        name: "{{ course }} : {{ course | type_debug }}"
