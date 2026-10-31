@@ -1,7 +1,7 @@
 - name: demo on ping
   hosts: local
   connection: local
-  tasks:
+  tasks: # tasks == collections == modules
     - name: print hello world
       ansible.builtin.debug:
         msg: "Hello ansible !!"
