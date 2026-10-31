@@ -1,0 +1,15 @@
+- name: installing packges
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    packages: 
+    - { name: 'nginx', state: 'present'}
+    - { name: 'mysql', state: 'absent'}
+  tasks:
+  - name: installing packges
+    package:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop: "{{ packages }}"
+
