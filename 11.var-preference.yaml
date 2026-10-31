@@ -1,18 +1,18 @@
 - name: print var preference
   hosts: local
   connection: local
-  vars: #from play
+  vars: 
     course: "PLAY ansible 
-  vars_files: #from other file
+  vars_files: 
   - course.yaml
   vars_prompt:
   - name: course
     prompt: please enter course name
     private: false
   tasks:
-    - name: print vars from task
-      vars:
-        course: PLAY from task
-      debug:
-        msg: " i am learning {{ course }}"
+  - name: print vars from task
+    vars:
+      course: PLAY from task
+    debug:
+      msg: " i am learning {{ course }}"
     
