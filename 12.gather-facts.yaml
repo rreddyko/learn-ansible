@@ -1,7 +1,12 @@
-- name: gathering facts
+- name: printing facts
   hosts: local
   connection: local
   tasks:
-  - name: facts printing
+  - name: print facts
     debug:
-      msg: " {{ ansible_facts }} "
+      msg: " {{ ansible_facts }}"
+  - name: print os and IP
+    debug:
+      msg: |
+       OS family: {{ ansible_facts['os_family'] }}
+       IP address: {{ ansible_facts.default_ipv4.address }}
