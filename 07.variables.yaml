@@ -1,6 +1,6 @@
 - name: print var file
   hosts: local
-  conneciton: local
+  connection: local
   vars_file:
   - course.yaml
   tasks:
