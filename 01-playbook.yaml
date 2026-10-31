@@ -1,4 +1,4 @@
-- name: ping demo
+- name: ping rama
   hosts: localhost
   connection: local
   tasks:
