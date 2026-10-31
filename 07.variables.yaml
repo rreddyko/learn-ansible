@@ -1,9 +1,9 @@
-- name: print course vars
+- name: print var file
   hosts: local
-  connection: local
+  conneciton: local
   vars_file:
-    course.yaml
+  - course.yaml
   tasks:
-    - name: course info
-      debug:
-        msg: " {{ course }}, {{ trainer }}, {{ duration }}"
+  - name: course info
+    debug:
+      msg: " {{ course }}, {{ trainer }}, {{ duration }}"
