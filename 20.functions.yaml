@@ -6,7 +6,7 @@
   tasks:
   - name: filters
     debug:
-      msg: "Hi {{ person_name }} | default('Rama') }}"
+      msg: "Hi {{ person_name | default('Rama') }}"
   - name: convert string to list
     debug:
       msg: "Topics are {{ topics | split(',') }}"
