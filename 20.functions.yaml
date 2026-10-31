@@ -3,6 +3,10 @@
   connection: local
   vars:
     topics: "Linux, shell, ansible"
+  names:
+  - Ramesh
+  - Reddy
+  - kotha
   tasks:
   - name: filters
     debug:
@@ -10,3 +14,7 @@
   - name: convert string to list
     debug:
       msg: "Topics are {{ topics | split(',') }}"
+  - name:
+    debug:
+      msg: "Name is {{ names | join}}"
+    
