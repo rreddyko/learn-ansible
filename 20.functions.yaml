@@ -7,7 +7,7 @@
     - Ramesh
     - Reddy
     - kotha
-    topic: ANSIBLE
+    source: ANSIBLE
   tasks:
   - name: filters
     debug:
@@ -20,5 +20,5 @@
       msg: "Name is {{ names | join(' ')}}"
   - name:
     debug:
-      msg: "converting to lower case {{ topic | lower}}"
+      msg: "converting to lower case {{ source | lower}}"
     
