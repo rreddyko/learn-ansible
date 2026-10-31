@@ -1,0 +1,7 @@
+- name: vars in inventory
+  hosts: local
+  connection: local
+  tasks:
+  - name: printing vars in inventory
+    debug:
+      msg: " {{ course }} {{ trainer }} {{ duration }}"
