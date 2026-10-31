@@ -1,6 +1,5 @@
 - name: vars in inventory
-  hosts: local
-  connection: local
+  hosts: frontend
   tasks:
   - name: printing vars in inventory
     debug:
