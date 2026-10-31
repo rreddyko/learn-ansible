@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    courses: "dev with secops"
+    course: "dev with secops"
     duration: 150
     live_session: true
     topics: #list
