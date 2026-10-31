@@ -1,0 +1,28 @@
+{
+    "firstname": "Ramesh",
+    "lastname": "kotha",
+    "dob": "1-1-1",
+    "addresses": [
+        {
+            "type": "temp",
+            "doorno": 321,
+            "streetname": "ganid",
+            "city": "tpty"
+        },
+        {
+            "type": "perm",
+            "doorno": 456,
+            "streetname": "templestreet",
+            "city":"tpty"
+        }
+
+    ],
+    "skills":[
+        {
+            "OS": "linux",
+            "IDE": "VScode",
+            "CM": "Ansible"
+        }
+    ]
+
+}

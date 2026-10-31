@@ -1,0 +1,17 @@
+<student>
+    <firstName>Ramesh</firstName>
+    <lastName>kotha</lastName>
+    <dob>1-1-1</dob>
+    <addresses>
+        <address type="temp">
+            <doorno>123</doorno>
+            <street>gandinagar</street>
+            <city>tpty</city>
+        </address>
+        <address type="perm">
+            <doorno>321</demo>
+            <street>templestreet</street>
+            <city>tpty</city>
+        </address>
+    </addresses>
+</student>        

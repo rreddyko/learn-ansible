@@ -1,0 +1,39 @@
+- first_name: "Ramesh"
+  last_name: "Kotha"
+  dob: "1-1-1"
+  addresses:
+  - type: temp
+    doorno: 321
+    streetname: gandi
+    city: tpty
+  - type: perm
+    doorno: 456
+    streetname: templestreet
+    city: tpty
+  skills:
+    OS: "linux"
+    IDE: "VSCode"
+    CM: "Ansible"
+  
+- first_name: "Ramesh"
+  last_name: "kotha"
+  dob: "1-1-1"
+  addresses:
+  - type: perm
+    doorno: 321
+    streetname: gandi
+    city: tpty
+  - type: temp
+    doorno: 456
+    streetname: templestreet
+    city: tpty
+  skills:
+    OS: linux
+    IDE: VScode
+    CM: Ansible
+    
+
+
+
+
+
