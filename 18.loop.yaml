@@ -3,15 +3,14 @@
   connection: local
   become: yes
   vars:
-    packages:
+    packages_toinstall:
     - nginx
     - mysql
     - git
-    - net-tools
-    - htop
+    - net-toold
   tasks:
   - name: install packages
     package:
       name: " {{ item }}"
       state: present
-    loop: packages
+    loop: {{ packages_toinstall }}
