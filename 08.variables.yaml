@@ -1,13 +1,14 @@
 - name: print confidentail info
   hosts: local
   connection: local
-  prompt_vars:
+  vars_prompt:
   - name: user_name
     prompt: please enter user name
     private: true
   - name: password
     prompt: please enter password
     private: false
+    
   tasks:
   - name: printing user name and password
     debug:
