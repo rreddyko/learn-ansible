@@ -8,10 +8,8 @@
     ansible.builtin.debug:
       msg: " my father got {{ acres }} from my grandpa"
 
-  - name: father proerty
+  - name: father property
     vars:
-    acres: "1 acre"
+      acres: "1 acre"
     ansible.builtin.debug:
-      msg: "i got {{ acres }} from my father"
-
-  
+      msg: " i got {{ acres }} from my father"
