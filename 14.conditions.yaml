@@ -11,5 +11,5 @@
   - name: is odd
     debug:
       msg: "provided number {{ givenumer }} is odd"
-    when: givenumer % 2 != 0 
+    when: givenumber % 2 != 0 
 
