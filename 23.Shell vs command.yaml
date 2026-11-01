@@ -9,3 +9,10 @@
   - name: print command output
     debug:
       msg: "{{ ec2_user_output}}"
+  - name: shell for ls
+    shell: ls -la > /tmp/files.txt
+    register: files_ouput
+  
+  - name: print files
+    debug:
+      msg: "{{ files_ouput }}"
