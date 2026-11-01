@@ -13,7 +13,7 @@
     more_details: #dictionary/map
       trainer: ramesh
       months: 4 
-    exact_duiration: 4.5
+      exact_duiration: 4.5
   tasks:
   - name: print info and tpes
     debug:
